@@ -1,0 +1,82 @@
+  
+  .hero {
+    /*background-image: url('sport.jpg');*/ /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh; /* Full screen height */
+    color: rgb(223, 221, 232); /* Optional: for better contrast */
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #035cbc, #66da7d, #f2dd66, #ff5722);
+
+  }
+
+.bg-gradient {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+}
+.bg-gradient.bg-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.benefits h5 {
+  font-style: italic;
+  color: #0e0e01;
+}
+
+.benefits ul {
+  font-style: italic;
+  font-size: 1rem;
+  color: white;
+  line-height: 2;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+#back {
+  height: 400px; /* Adjust height as needed */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.img-hvr{
+    position: relative;
+    overflow: hidden;
+  }
+  .img-hvr .text{
+    position: absolute;
+    bottom: 0;left: 0;
+    margin: 0 15px;
+    padding: 15px;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    transition: opacity 1s linear;
+  }
+
+  /*Transition for Image 4*/
+  .img-hvr4 .text{
+    color: rgb(253, 253, 253);  /* Almost pure white text */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 1s linear;/* Smooth fade-in effect */
+  }
+  .img-hvr4:hover .text{opacity: 1;}/* Becomes visible on hover */
+  .img-hvr4 .inner{
+    position: relative;
+    width: 92%;height: 100%;
+    overflow: hidden;
+  }
+  .img-hvr4 .inner::before{
+    position: absolute;
+    width: 100%;height: 100%;
+    bottom: 0;left: 0;
+    background-color: rgb(176, 168, 161); /* Soft blue overlay */
+    content: "";
+    z-index: 1;opacity: 0.7;
+    transform: scaleX(0); /* Initially collapsed horizontally */
+    transition: transform 1s linear;
+  }
+  .img-hvr4:hover .inner::before{
+    transform: scaleX(1); /* Expands horizontally on hover */
+  }  
+  

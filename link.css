@@ -1,0 +1,88 @@
+.interactive-refs {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .refs-subtitle {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #ffffff;
+        }
+        
+        .ref-card {
+            border: none;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .ref-card:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-3px);
+        }
+        
+        .ref-header {
+            background: linear-gradient(135deg, #000000, #646060);
+            border: none;
+            padding: 1.25rem;
+            cursor: pointer;
+        }
+        
+        .ref-header:not(.collapsed) {
+            border-radius: 12px 12px 0 0;
+            background: linear-gradient(135deg, #000000, #635f5f);
+        }
+        
+        .ref-title {
+            color: white;
+            font-weight: 600;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        
+        .ref-icon {
+            color: rgb(0, 0, 0);
+            transition: transform 0.4s ease;
+        }
+        
+        .ref-header:not(.collapsed) .ref-icon {
+            transform: rotate(180deg);
+        }
+        
+        .ref-body {
+            background-color: #f8f9fa;
+            border-radius: 0 0 12px 12px;
+            padding: 1.5rem;
+        }
+        
+        .ref-description {
+            color: #495057;
+            margin-bottom: 1rem;
+        }
+        
+        .ref-link {
+            background: linear-gradient(135deg, #000000, #797373);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .ref-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            color: white;
+        }
+        
+        .header-gradient {
+            background: #fff;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }

@@ -1,0 +1,93 @@
+body {
+  background-color: #F2F2F2;
+  margin: 0;
+  padding: 0;
+  color: #001F5B;
+}
+
+header {
+  background-color: #f7d154;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.sports-list h2 {
+  color: #b0741b;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sports-list ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.sports-list li {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #E0E0E0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sports-list li:hover {
+  background-color: #00B140;
+  color: white;
+  border-color: #00B140;
+}
+
+.sport-details {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #E0E0E0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+}
+
+.sport-details h3 {
+  margin-bottom: 1rem;
+  color: #001F5B;
+  font-family: 'Poppins', sans-serif;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

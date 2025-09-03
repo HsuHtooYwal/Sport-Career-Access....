@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive References with Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="link.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container interactive-refs">
+        <div class="text-center mb-5">
+            <h1 class="header-gradient fw-bold">Reference Links</h1>
+            <p class="lead refs-subtitle">Click on any topic below to discover the sources and learn more</p>
+        </div>
+
+        <div class="accordion" id="referencesAccordion">
+            
+            <!-- Reference 1 -->
+            <div class="card ref-card">
+                <div class="card-header ref-header" id="refHeadingOne" data-bs-toggle="collapse" data-bs-target="#refCollapseOne" aria-expanded="false" aria-controls="refCollapseOne">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="ref-title">
+                            <i class="bi bi-mortarboard-fill"></i> Scholarships
+                        </h3>
+                        <i class="bi bi-chevron-down ref-icon"></i>
+                    </div>
+                </div>
+                <div id="refCollapseOne" class="collapse" aria-labelledby="refHeadingOne" data-bs-parent="#referencesAccordion">
+                    <div class="card-body ref-body">
+                        <p class="ref-description">We use this website to find out our informations about Scholarships.</p>
+                        <a href="https://en.wikipedia.org/wiki/Pangram" target="_blank" class="ref-link">
+                            <i class="bi bi-box-arrow-up-right"></i> Explore about Scholarships
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reference 2 -->
+            <div class="card ref-card">
+                <div class="card-header ref-header" id="refHeadingTwo" data-bs-toggle="collapse" data-bs-target="#refCollapseTwo" aria-expanded="false" aria-controls="refCollapseTwo">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="ref-title">
+                            <i class="bi bi-trophy-fill"></i> Sports
+                        </h3>
+                        <i class="bi bi-chevron-down ref-icon"></i>
+                    </div>
+                </div>
+                <div id="refCollapseTwo" class="collapse" aria-labelledby="refHeadingTwo" data-bs-parent="#referencesAccordion">
+                    <div class="card-body ref-body">
+                        <p class="ref-description">We use this website to find out about the sports' informations.</p>
+                        <a href="https://example.com/study" target="_blank" class="ref-link">
+                            <i class="bi bi-box-arrow-up-right"></i> Explore more about sport.
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reference 3 -->
+            <div class="card ref-card">
+                <div class="card-header ref-header" id="refHeadingThree" data-bs-toggle="collapse" data-bs-target="#refCollapseThree" aria-expanded="false" aria-controls="refCollapseThree">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="ref-title">
+                            <i class="bi bi-image"></i> Images and  Videos <i class="bi bi-file-play"></i>
+                        </h3>
+                        <i class="bi bi-chevron-down ref-icon"></i>
+                    </div>
+                </div>
+                <div id="refCollapseThree" class="collapse" aria-labelledby="refHeadingThree" data-bs-parent="#referencesAccordion">
+                    <div class="card-body ref-body">
+                        <p class="ref-description">We use this link to find the images used in this website.</p>
+                        <a href="https://example.com/design-guide" target="_blank" class="ref-link">
+                            <i class="bi bi-box-arrow-up-right"></i> Find Images
+                        </a>
+                        <br><br><br><br>
+                        <p class="ref-description">We use this link to find the videos used in this website.</p>
+                        <a href="https://example.com/design-guide" target="_blank" class="ref-link">
+                            <i class="bi bi-box-arrow-up-right"></i> Find Videos
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reference 4 -->
+            <div class="card ref-card">
+                <div class="card-header ref-header" id="refHeadingFour" data-bs-toggle="collapse" data-bs-target="#refCollapseFour" aria-expanded="false" aria-controls="refCollapseFour">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="ref-title">
+                            <i class="bi bi-brush-fill"></i> Design Ideas
+                        </h3>
+                        <i class="bi bi-chevron-down ref-icon"></i>
+                    </div>
+                </div>
+                <div id="refCollapseFour" class="collapse" aria-labelledby="refHeadingFour" data-bs-parent="#referencesAccordion">
+                    <div class="card-body ref-body">
+                        <p class="ref-description">We used this link to get idea about how to design this website.</p>
+                        <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank" class="ref-link">
+                            <i class="bi bi-box-arrow-up-right"></i> Explore Designs
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionButtons = document.querySelectorAll('[data-bs-toggle="collapse"]');
+            
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const target = document.querySelector(this.getAttribute('data-bs-target'));
+                    
+                    setTimeout(() => {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }, 300);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

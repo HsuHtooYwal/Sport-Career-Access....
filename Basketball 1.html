@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basketball</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="SPORTS 2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="img.png">
+    <style>
+    .background{
+      background-color: rgba(39, 35, 35, 0.5); /* Red background with 50% opacity */
+      color: #ffffff; /* Text color remains fully opaque */
+    }
+    </style>
+  </head>
+  <body>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img.png" alt="">Sport Career Access
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="scholarship.html"><i class="bi bi-mortarboard-fill"></i> Scholarships</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#"><i class="bi bi-trophy-fill"></i> Sports</a>
+              <ul class="dropdown-menu">
+                <li><a href="Individualsports 3.html" class="dropdown-item">Individual Sports</a></li>
+                <li><a href="Team Sport 1.html" class="dropdown-item">Team Sports</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact2 2.html"><i class="bi bi-envelope-fill"></i> Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html"><i class="bi bi-people-fill"></i> About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sign-up.html"><i class="bi bi-person-plus-fill"></i> Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+    <div class="card text-bg-dark">
+      <img src="Basketball.jpg" id="sport_images" style="height: 600px;" alt="img-overlay" class="card-img img">
+      <div class="card-img-overlay">
+        <div class="row">
+            <div class="offset-md-1 col-md-4">
+                <select onchange="" id="Sports" class="form-select">
+                  <option value="Basketball" selected>Basketball</option>
+                  <option value="Football">Football (Soccer)</option>
+                  <option value="Volley-ball">Volley-ball</option>
+                  <option value="Cricket">Cricket</option>
+                  <option value="Ice-Hockey">Ice-Hockey</option>
+                  <option value="Field-Hockey">Field-Hockey</option>
+                  <option value="Baseball">Baseball</option>
+                  <option value="American Football">American Football</option>
+                  <option value="F1">F1 (Formula 1)</option>
+                </select>
+            </div>
+            <div class="col-md-7 border rounded-4 p-5 background">
+              <h5 id="question1"><b>Who invented basketball and when?</b></h5>
+                <p id="p1"></p>
+               
+                <h5 id="question2"><b>How many players are on a basketball team?</b></h5>
+                <p id="p2"></p>
+                <p id="p21"></p>
+                <p id="p22"></p>
+               
+                <h5 id="question3"><b>What equipment is needed to play basketball?</b></h5>
+                <p id="p3"></p>
+            </div>
+        </div>
+      </div>
+    </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="SPORTS 1.js"></script>
+  </body>
+</html>

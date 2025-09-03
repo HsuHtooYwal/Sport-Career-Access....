@@ -1,0 +1,49 @@
+
+body{
+  background-color: bisque;
+  font-family: serif;
+}
+.section {
+  background: linear-gradient(to right, #d14c62, #073c8b);
+  padding: 60px 20px;
+}
+.h4{
+  text-align: center;
+}
+ .circle {
+    border-radius: 50%;
+    width: 150px; /* Optional: adjust size */
+    height: 150px; /* Optional: adjust size */
+    object-fit: cover; /* Ensures the image fills the circle */
+    margin-bottom: 15px; /* Adds space below the image */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    /*transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;*/
+  }
+  .circle:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+  }
+  .circle.active {
+  transform: scale(1.1); /* Slight zoom */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+  .col {
+    text-align: center; /* Centers both image and text */
+    margin-top: 20px;
+  }
+  .divider {
+    width: 50%;
+    height: 1px;
+    background-color: #240dd9;
+    margin: 15px auto; /* Adds space above and below the line */
+   
+  }
+  p {
+    font-size: 15px;
+    color: #093d54;
+    margin-top: 5px;
+  }
+
