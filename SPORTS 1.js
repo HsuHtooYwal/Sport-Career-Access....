@@ -175,7 +175,7 @@ function Sport() {
             break;
  
         case 'Basketball':
-            bg.src = 'basketball.jpg'
+            bg.src = 'Basketball.jpg'
             p1.textContent =
             '- The game was invented by Springfield College instructor and graduate student James Naismith in 1891, and has grown into the worldwide athletic phenomenon we know it to be today.';
             p2.textContent =
@@ -245,7 +245,7 @@ function Sport() {
           break;
 
         case 'Baseball':
-        bg.src = 'Baseball.png'
+        bg.src = 'BASEBALL.png'
         p1.textContent =
         '- Baseball was not "invented" by one person but evolved from older bat-and-ball games, particularly from the British game of rounders and an American game called "town ball". While the myth credits Abner Doubleday with inventing the game in 1839, it was Alexander Cartwright, a New York bookseller, who codified the first official rules in 1845, leading to the modern version of the game.';
         p2.textContent =
