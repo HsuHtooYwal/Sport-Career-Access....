@@ -37,7 +37,7 @@ switch(selectedIndex) {
     break;
  
   case 'Basketball':
-    bg.src = 'basketball.jpg'
+    bg.src = 'Basketball.jpg'
     p1.textContent =
     '- The game was invented by Springfield College instructor and graduate student James Naismith in 1891, and has grown into the worldwide athletic phenomenon we know it to be today.';
     p2.textContent =
